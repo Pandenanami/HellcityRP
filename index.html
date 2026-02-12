@@ -10,9 +10,15 @@
 body {
     margin:0;
     font-family:'Inter',sans-serif;
-    background:linear-gradient(135deg,#0a0a0a,#1a0000,#000);
+    background: 
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+        url('ciudad.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color:#f5f5f5;
 }
+
 
 header{
     text-align:center;
@@ -22,8 +28,14 @@ header{
 }
 
 header img{
-    width:180px;
-    margin-bottom:20px;
+    width:200px;
+    margin-bottom:25px;
+    filter: drop-shadow(0 0 25px #ff0000);
+    transition: 0.4s;
+}
+
+header img:hover{
+    transform: scale(1.05);
 }
 
 header h1{
@@ -39,12 +51,12 @@ header p{
 }
 
 nav{
-    background:#0f0f0f;
+    background: linear-gradient(90deg,#000,#1a0000,#000);
     padding:15px;
     text-align:center;
     position:sticky;
     top:0;
-    border-bottom:1px solid #330000;
+    border-bottom:2px solid #550000;
 }
 
 nav a{
@@ -109,7 +121,7 @@ footer{
 <body>
 
 <header>
-    <img src="logo.png" alt="HellcityRP Logo">
+    <img src="Logo.png" alt="HellcityRP Logo">
     <h1>HELLCITY RP</h1>
     <p>Normativas Oficiales del Servidor</p>
     <a href="#" class="discord-btn">Unirse a Discord</a>
